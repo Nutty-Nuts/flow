@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pomodoro Prototype</title>
+    <link rel="stylesheet" href="index.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+
+      <div class="title-bar">
+        <div class="settings">
+          <button class="settings-button ion-icon-tertiary btn" id="js-minimize-btn" onclick="settings()">
+            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+          </button>
+        </div>
+
+        <div class="empty-title">
+
+        </div>
+
+        <div class="drag">
+          <b>POMO FLOW</b>
+        </div>
+
+        <div class="window-settings">
+          <div class="">
+            <button class="minimize-button ion-icon-secondary btn" id="js-minimize-btn" onclick="minimize()">
+              <ion-icon name="remove-outline"></ion-icon>
+            </button>
+            <!-- <button class="maximize-button" id="js-maximize-btn" onclick="maximize()">
+              Maximize -->
+            </button>
+            <button class="close-button ion-icon-secondary btn" id="js-close-btn" onclick="closed()">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+      </div>
+
+      </div>
+
+      
+  
+      <div class="progress-bar">
+        <progress id="js-progress" class="center" value="0"></progress>
+      </div>
+      
+      <div class="timer">
+        <div class="button-group mode-buttons" id="js-mode-buttons">
+  
+          <button class="button active mode-button no-drag btn" id="id-pomodoro" data-mode="pomodoro">
+            POMODORO
+          </button>
+  
+          <button class="button mode-button no-drag btn" id="js-short-break" data-mode="short_break">
+            SHORT BREAK
+          </button>
+  
+          <button class="button mode-button no-drag btn" id="js-long-break" data-mode="long_break">
+            LONG BREAK
+          </button>
+        </div>
+
+        <div class="empty-space">
+
+        </div>
+  
+        <div class="clock center" id="js-clock">
+          <div class="vertical">
+            <span id="js-minutes" >
+              25
+            </span>
+            <span id="js-separator">
+              |
+            </span>
+            <span id="js-seconds">
+              00
+            </span>
+          </div>
+        </div>
+  
+        <div class="action-buttons center">
+          <button class="reset-button ion-icon-secondary act-btn-secondary btn" id="js-reset-btn" onclick="reset_session()">
+            <ion-icon name="refresh-outline"></ion-icon>
+          </button>
+          <button class="start-button ion-icon-primary act-btn-primary btn" id="js-start-btn" onclick="start_timer()">
+            <ion-icon name="play-outline"></ion-icon>
+          </button>
+          <button class="skip-button ion-icon-secondary act-btn-secondary btn" id="js-skip-btn" onclick="skip_session()">
+            <ion-icon name="play-skip-forward-outline"></ion-icon>
+          </button>
+        </div>
+  
+      </div>
+      
+    </main>
+    
+    <script src="./render.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>

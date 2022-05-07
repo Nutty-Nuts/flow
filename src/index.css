@@ -1,0 +1,229 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(71, 71, 71);
+  margin: auto;
+  max-width: 38rem;
+  padding: 1rem;
+}
+.title-bar
+{
+  display: flex;
+  
+}
+
+.empty-title {
+  flex: 0.5;
+  -webkit-app-region: drag;
+
+}
+
+.settings {
+  flex: 0.5;
+  height: 2rem;
+}
+
+.drag {
+  flex: 2.5;
+  height: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  letter-spacing: 3px;
+  font-size: 20px;
+  
+  -webkit-app-region: drag;
+}
+
+.window-settings
+{
+  flex: 1;
+  height: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  column-gap: 2rem;
+}
+
+.progress-bar {
+  height: 7.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 250px;
+  height: 20px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.116) inset;
+}
+
+progress[value]::-webkit-progress-value {
+  background-image:
+	-webkit-linear-gradient(top,rgba(255, 255, 255, .25),rgba(0, 0, 0, .25)),
+	-webkit-linear-gradient(left, #9ee67a, #f0ffa3);
+
+    border-radius: 10px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.mode-buttons {
+  height: 2rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 1rem;
+  
+}
+
+.empty-space {
+  height: 1rem;
+}
+
+.clock {
+  font-size: 100px;
+
+  height: 10rem;
+  margin: 1rem;
+  border-radius: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(239, 239, 239);
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.116);
+
+  
+}
+
+.action-buttons {
+  height: 5rem;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 2rem;
+}
+
+.no-drag {
+  -webkit-app-region: no-drag
+}
+
+.ion-icon-primary {
+  font-size: 3rem;
+}
+
+.ion-icon-secondary {
+  font-size: 1.5rem;
+  --ionicon-stroke-width: 48px
+  
+}
+
+.btn:hover {
+  background-color: rgb(210, 210, 210);
+}
+
+.btn:active {
+  background-color: rgb(192, 192, 192);
+  transform: translateY(4px);
+}
+
+.act-btn-primary {
+  border: none;
+  height: 3.75rem;
+
+  border-radius: 64px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.116);
+}
+
+.act-btn-secondary {
+  border: none;
+  height: 2.25rem;
+
+  border-radius: 64px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 3.5px 3.5px 5px rgba(0, 0, 0, 0.116);
+}
+
+.mode-button {
+  border: none;
+  height: 2rem;
+  width: 9rem;
+
+  border-radius: 16px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.116);
+
+}
+
+.minimize-button {
+  border: none;
+  height: 1.5rem;
+
+  border-radius: 16px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.116);
+
+}
+.close-button {
+  border: none;
+  height: 1.5rem;
+
+  border-radius: 16px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.116);
+
+}
+.settings-button {
+  border: none;
+  height: 2rem;
+
+  border-radius: 16px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.116);
+
+}
+
+.ion-icon-tertiary {
+  font-size: 2rem;
+  
+}
+
+ion-icon {
+  image-rendering: crisp-edges;
+  color: rgb(71, 71, 71);
+
+}
