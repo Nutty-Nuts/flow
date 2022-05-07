@@ -9,9 +9,7 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\"",
-    "dist": "npm run build && electron-builder",
-    "test": "npm run build && electron-packager ."
+    "lint": "echo \"No linting configured\""
   },
   "keywords": [],
   "author": "vegag",
