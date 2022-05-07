@@ -1,6 +1,6 @@
 {
-  "name": "pomo-flow",
-  "productName": "pomo-flow",
+  "name": "flow",
+  "productName": "flow",
   "version": "1.0.0",
   "description": "My Electron application description",
   "main": "src/index.js",
@@ -9,7 +9,9 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "lint": "echo \"No linting configured\"",
+    "dist": "npm run build && electron-builder",
+    "test": "npm run build && electron-packager ."
   },
   "keywords": [],
   "author": "vegag",
@@ -42,6 +44,8 @@
     }
   },
   "dependencies": {
+    "electron-builder": "^23.0.3",
+    "electron-packager": "^15.5.1",
     "electron-squirrel-startup": "^1.0.0"
   },
   "devDependencies": {
